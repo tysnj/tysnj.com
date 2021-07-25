@@ -1,6 +1,7 @@
 import React, { Children } from 'react';
-import Navbar from '././Navbar/Navbar';
-import GlobalStyle from   '.././globalStyles';
+import Navbar from '../Navbar/Navbar';
+import Home from '../Home/Home'
+import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 function App() {

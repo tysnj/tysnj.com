@@ -5,7 +5,7 @@ interface NavbarProps {
 
 }
 
-export const Navbar: React.FC<NavbarProps> = ({}) => {
+const Navbar: React.FC<NavbarProps> = ({}) => {
     return (
       <Nav>
         <NavbarContainer>
@@ -14,3 +14,5 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
       </Nav>
     );
 }
+
+export default Navbar;

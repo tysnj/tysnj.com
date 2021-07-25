@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Container } from '../../globalStyles';
+import { Container } from '../App/globalStyles';
 
 export const Nav = styled.nav`
     background: #ffefceda;
