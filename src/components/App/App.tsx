@@ -1,20 +1,29 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import Home from '../Home/Home'
+import Landing from '../Landing/Landing'
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 const App:React.FC = () => (
     <Router>
       <GlobalStyle />
-      <Navbar />
       <Switch>
         <Route 
           exact path='/'
           render={() => (
-            <Home>
+            <Landing>
 
-            </Home>
+            </Landing>
+          )}
+        />
+        <Route path='/about'
+          render={() => (
+            <Navbar />
+          )}
+        />
+        <Route path='/projects'
+          render={() => (
+            <Navbar />
           )}
         />
         <Redirect to='/' />

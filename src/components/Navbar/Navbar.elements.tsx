@@ -1,7 +1,10 @@
-import React from 'react'
 import styled from 'styled-components';
 import { Container } from '../App/globalStyles';
 import { Link } from 'react-router-dom';
+
+interface Props {
+  onClick: (e: Event) => void;
+}
 
 export const Nav = styled.nav`
     background: #ffefceda;
