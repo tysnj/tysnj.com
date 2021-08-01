@@ -7,13 +7,13 @@ interface Props {
 }
 
 export const Nav = styled.nav`
-    background: #ffefceda;
+   background: #fff;
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -39,7 +39,7 @@ export const NavLogo = styled(Link)`
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 720px) {
     display: block;
     position: absolute;
     top: 0;
@@ -54,7 +54,8 @@ export const NavMenu = styled.ul<{click: boolean}>`
   align-items: center;
   list-style: none;
   text-align: center;
-  @media screen and (max-width: 960px) {
+
+  @media screen and (max-width: 720px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -64,18 +65,20 @@ export const NavMenu = styled.ul<{click: boolean}>`
     left: ${({click}) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #ffefceda;
+    background: #fff;
   }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
+
   &:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 720px) {
     width: 100%;
+
     &:hover {
       border: none;
     }
@@ -89,7 +92,7 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 720px) {
     text-align: center;
     padding: 2rem;
     width: 100%;

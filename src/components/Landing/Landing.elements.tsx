@@ -21,23 +21,20 @@ export const Logo = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   list-style: none;
-  text-align: center;
+  width: 20%;
   }
 `
 
 export const NavItem = styled.li`
-  height: 80px;
+  margin-top: 30px;
+  height: 20px;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid #fff;
-  }
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    &:hover {
-      border: none;
-    }
+    border-bottom: 2px solid #000;
   }
 `;
 
@@ -48,14 +45,5 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-    &:hover {
-      color: #000;
-      transition: all 0.3s ease;
-    }
-  }
+  /* size: 4rem; */
 `;
