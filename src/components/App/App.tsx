@@ -1,11 +1,10 @@
-import React, { Children } from 'react';
+import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home'
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-function App() {
-  return (
+const App:React.FC = () => (
     <Router>
       <GlobalStyle />
       <Navbar />
@@ -23,6 +22,5 @@ function App() {
     </Router>  
 
   );
-}
 
 export default App;

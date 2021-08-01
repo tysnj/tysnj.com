@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeContainer } from './Home.elements.tsx';
+import { HomeContainer } from './Home.elements';
 
 interface HomeProps {
 
