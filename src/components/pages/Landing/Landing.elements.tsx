@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import { Container } from '../App/globalStyles';
+import { Container } from '../../App/globalStyles';
 import { Link } from 'react-router-dom';
-
-interface Props {
-  onClick: (e: Event) => void;
-}
+import { CgArrowLongDown } from 'react-icons/cg';
 
 export const LandingContainer = styled(Container)`
   height: 100vh;
@@ -47,3 +44,9 @@ export const NavLinks = styled(Link)`
   height: 100%;
   /* size: 4rem; */
 `;
+
+export const ScrollIcon = styled(CgArrowLongDown)`
+  margin-top: 2rem;
+  height: 4rem;
+  width: 3rem;
+`

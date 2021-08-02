@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../../assets/images/LogoStacked.png'
-import { LandingContainer, Logo, NavMenu, NavItem, NavLinks } from './Landing.elements';
+import logo from '../../../assets/images/LogoStacked.png'
+import { LandingContainer, Logo, NavMenu, NavItem, NavLinks, ScrollIcon } from './Landing.elements';
 
 interface LandingProps {
 
@@ -29,6 +29,7 @@ const Landing: React.FC<LandingProps> = () => {
                 </NavLinks>
               </NavItem>
             </NavMenu>
+            <ScrollIcon/>
         </LandingContainer>
     );
 }
